@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #nav{
+            background-color: grey;
+            height: 50px;
+            width: 100%;
+        }
+        ul{
+            margin: 0;
+            padding: 0;
+        }
+        ul li{
+            list-style-type: none;
+            float: left;
+
+        }
+        ul li a{
+            color: black;
+            display: block;
+            text-decoration: none;
+            margin: 15px 100px;
+        }
+        ul li:hover{
+            background-color:white;
+            color: black;
+            border-radius: 30px;
+            border: 2px solid white;
+        }
+        #div1{
+            height: 300px;
+            width: 15%;
+            float: left;
+            
+        }
+        #info{
+            height: 300px;
+            width: 70%;
+            background-color: rgb(197, 197, 195);
+            float: left;
+            text-align: center;
+        }
+        #div2{
+            height: 300px;
+            width: 15%;
+        }
+        #b1{
+            border-radius: 30px;
+            background-color: wheat;
+        }
+        #b1:hover{
+            background-color: black;
+            color: white;
+        }
+        #info2 p{
+            margin: -20px;
+        }
+        #info2 img{
+            padding: 20px;
+            margin-top: 20px;
+            margin-left: 30px;
+
+        }
+        #img1{
+            float: left;
+            margin-left: 180px;
+        }
+        #img2{
+            float: left;
+            
+        }
+        #img3{
+            float: left;
+            
+        }
+        #img4{
+            float: left;
+            
+        }
+        #wrapper img{
+            border-radius: 5px;
+            margin-left: 30px;
+            margin-top: 20px;
+        }
+        #box{
+            background-color: blue;
+            height: 300px;
+            text-align: center;
+            margin-top: 120px;
+            position: absolute;
+            bottom: -498px;
+            width: 60%;
+            margin-left: 280px;
+            border-radius: 10px;
+        }
+        #box h1{
+            margin-top: 50px;
+        }
+        #box p{
+            margin: 0 70px;
+            font-size: 18px;
+            margin-top: -10px;
+            margin-bottom: 30px;
+        }
+        #box button{
+            background-color: rgb(92, 30, 248);
+            color: white;
+            border-radius: 5px;
+            border: none;
+            padding: 7px 15px;
+        }
+        #box button:hover{
+            background-color: red;
+            color: black;
+            border-radius: 50px;
+        }
+        #icons{
+            width: 88%;
+            background-color: rgb(197, 197, 195);
+            height: 180px;
+            text-align: center;
+            margin-left: 30px;
+            margin-top: 15px;
+            padding: 50px;
+        }
+        #icon1{
+            background-color: white;
+            height: 150px;
+            width: 140px;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 10px -2px;
+            float: left;
+            margin-left: 140px;
+        }
+        #icon1 img{
+            width: 50px;
+        }
+        #icon2{
+            background-color: white;
+            height: 150px;
+            width: 140px;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 10px -2px;
+            float: left;
+            margin-left: 100px;
+        }
+        #icon2 img{
+            width: 50px;
+        }
+        #icon3{
+            background-color: white;
+            height: 150px;
+            width: 140px;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 10px -2px;
+            float: left;
+            margin-left: 100px;
+        }
+        #icon3 img{
+            width: 50px;
+        }
+        #icon4{
+            background-color: white;
+            height: 150px;
+            width: 140px;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 10px -2px;
+            float: left;
+            margin-left: 100px;
+        }
+        #icon4 img{
+            width: 50px;
+        }
+        #footer{
+            width: 88%;
+            background-color: rgb(197, 197, 195);
+            height: 180px;
+            text-align: center;
+            margin-left: 30px;
+            margin-top: 15px;
+            padding: 50px;
+        }
+        #footerimg{
+            float: left;
+            margin-top: 30px;
+            margin-left: 100px;
+        }
+        #foot1{
+            float: left;
+            margin-top: -30px;
+            margin-left: 30px;
+        }
+        #foot2{
+            float: left;
+            margin-top: -30px;
+            margin-left: 50px;
+        }
+        #foot3{
+            float: left;
+            margin-top: -30px;
+            margin-left: 50px;
+        }
+        #foot4{
+            float: left;
+            margin-top: -30px;
+            margin-left: 50px;
+        }
+        #footer input{
+            margin-top: 20px;
+            border: 1.5px solid black;
+            border-radius: 5px;
+            padding: 5px;
+        }
+        #footer button{
+            background-color: rgb(150, 133, 133);
+            color: black;
+            border-radius: 5px;
+            border: none;
+            padding: 7px 15px;
+            margin-left: 7px;
+        }
+        #footer button:hover{
+            background-color: grey;
+            color:white;
+            border-radius: 15px;
+            border: white;
+            
+        }
+        #footimg1{
+            width: 23px;
+        }
+        #footimg2{
+            margin-left: 15px;
+            width: 23px;
+        }
+        #footimg3{
+            margin-left: 15px;
+            width: 25px;
+            height: 25px;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div id="nav">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Page</a></li>
+            <li><a href="#info2">Shop</a></li>
+            <li><a href="#icons">Elements</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+    <hr>
+    <div id="div1"></div>
+    <div id="info">
+        <h1 style="text-align: center;">Up To</h1>
+        <h1 style="text-align: center;"><span style="color: red;">%</span> Discount</h1>
+        <h3 style="text-align: center;">Summer Lookbook-2024</h3>
+        <h4 style="text-align: center; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Loren ipsum,dolor sit amet consectetur adipisicing elit.Illo,facere.</h4>
+        <button id="b1">Explore Now</button>
+    </div>
+    <div id="div2"></div>
+    <hr>
+    <div id="info2" style="text-align: center;">
+        <h2>Top Category</h2>
+        <p style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Follow the most popular trends and exlusive items from castro shop</p>
+        <div id="img1">
+            <img src="https://picsum.photos/200" alt="" style="border-radius: 50%;">
+            <p>Gents <br> Collection</p>
+        </div>
+        <div id="img2">
+            <img src="https://picsum.photos/200" alt="" style="border-radius: 50%;">
+            <p>kids <br> Collection</p>
+        </div>
+        <div id="img3">
+            <img src="https://picsum.photos/200" alt="" style="border-radius: 50%;">
+            <p>women <br> Collection</p>
+        </div>
+        <div id="img4">
+            <img src="https://picsum.photos/200" alt="" style="border-radius: 50%;">
+            <p>Footwear <br> Collection</p>
+        </div>
+    </div>
+    <div id="wrapper" style="margin-top: 40px;">
+        <img src="image/nimesh.jpg" alt="" height="500px" width="95%">
+        <div id="box">
+            <h1>End of Season Clearence Sale<br>upto 50%</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis veniam qui commodi maiores minima quaerat porro incidunt laudantium asperiores dolor, odit aspernatur nemo quidem quam assumenda. Quod veniam cumque sint!</p>
+            <button>Shop Now</button>
+        </div>
+    </div>
+    <div id="icons">
+        <div id="icon1">
+            <img src="https://cdn-icons-png.flaticon.com/128/6831/6831000.png" alt="">
+            <h4>Free Shipping</h4>
+            <p>Free shipping on order over $100</p>
+        </div>
+        <div id="icon2">
+            <img src="https://cdn-icons-png.flaticon.com/128/590/590501.png" alt="">
+            <h4>Secure Payment</h4>
+            <p>We ensure secure payment with PEW</p>
+        </div>
+        <div id="icon3">
+            <img src="https://cdn-icons-png.flaticon.com/128/1067/1067566.png" alt="">
+            <h4>Support 24 hours</h4>
+            <p>Contact us 24 hours a day,7 days a week</p>
+        </div>
+        <div id="icon4">
+            <img src="https://cdn-icons-png.flaticon.com/128/4989/4989753.png" alt="">
+            <h4>Returns</h4>
+            <p>simply return within 30 days for exchange </p>
+        </div>
+    </div>
+    <div id="footer">
+        <div id="footerimg">
+            <img src="https://cdn-icons-png.flaticon.com/128/9198/9198132.png" alt="">
+        </div>
+        <div id="foot1">
+            <h3>Category</h3>
+            <p>Men</p>
+            <p>Women</p>
+            <p>Kids</p>
+            <p>Accessories</p>
+            <p>Shoe</p>
+        </div>
+        <div id="foot2">
+            <h3>Useful Links</h3>
+            <P>News & Tips</P>
+            <P>About us</P>
+            <P>Terms and Conditions</P>
+            <P>Our Shop</P>
+            <P>Contact us</P>
+        </div>
+        <div id="foot3">
+            <h3>Contact</h3>
+            <p>470B Ruecker Wall,<br>Kassandratwon, HI<br>+(23212)2312323</p>
+            <p>Shop@gmail.com</p>
+            <img id="footimg1" src="https://cdn-icons-png.flaticon.com/128/2111/2111392.png" alt="">
+            <img id="footimg2" src="https://cdn-icons-png.flaticon.com/128/2111/2111738.png" alt="">
+            <img id="footimg3" src="https://cdn-icons-png.flaticon.com/128/2111/2111483.png" alt="">
+        </div>
+        <div id="foot4">
+            <h3>Newsletter</h3>
+            <p>470B Ruecker Wall, Kassandratwon,<br>HI 975544</p>
+            <input><button>Subscribe</button>
+        </div>
+    </div>
+    
+    
+</body>
+</html>
